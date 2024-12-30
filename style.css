@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d1b2;
+    text-shadow: 0 0 10px rgba(0, 209, 178, 0.8);
+}
+
+.row {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.row label {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.row input {
+    width: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 auto;
+}
+
+.row button {
+    background-color: #00d1b2;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #121212;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 209, 178, 0.7);
+    flex: 1 1 auto;
+}
+
+.row button:hover {
+    background-color: #00a991;
+    color: #e0e0e0;
+}
+
+.output {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.output p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row input,
+    .row button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .output {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .row label {
+        font-size: 1rem;
+    }
+
+    .row input,
+    .row button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .output p {
+        font-size: 0.9rem;
+    }
+}
